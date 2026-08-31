@@ -1,0 +1,28 @@
+[project]
+name = "curso-eng-ia-zc"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Luiz Augusto Soutes", email = "50605574+soutes@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "groq>=1.7.0",
+    "jupyter>=1.1.1",
+    "minsearch>=0.2.0",
+    "python-dotenv>=1.2.3",
+    "requests>=2.34.2",
+]
+
+[project.scripts]
+curso-eng-ia-zc = "curso_eng_ia_zc:main"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.3.0",
+]
